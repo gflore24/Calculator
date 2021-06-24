@@ -1,0 +1,106 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    border: none;
+   
+  }
+  
+  html {
+    font-size: 24px;
+    font-family: 'Unica One', cursive;
+  }
+  
+  #app {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    padding: 1rem 0;
+  }
+  
+  #app h1 {
+    font-size: 3rem;
+    letter-spacing: 0.5rem;
+    margin-bottom: 8px;
+  }
+  .display {
+      border-radius: 20px;
+      border: 2px  solid blue;
+      margin:0px 10px 10px;
+      padding: 1px 10px 10px;
+      background-color: lightskyblue;
+      height: fixed;
+      display: grid;
+      grid-template-rows:25px 25px 25px 25px;
+  }
+  .controls {
+      margin: 10px;
+      height: fixed;
+      display: grid;
+      grid-template-columns: 50px 50px 50px 50px;
+      grid-template-rows: 30px 30px 30px 30px 30px;
+
+  }
+  .calculator {
+      background-color: grey;
+      border: 4px solid black;
+      border-radius: 20px;
+  }
+ 
+  .operations{
+    display: grid; 
+    grid-area: 1/4/6/4;
+  }
+  .memory{
+      display: grid;
+      grid-template-columns:75px 3em 10%;
+      grid-template-rows:30px 3em 30px;
+  }
+  .digits{
+      display: grid;
+      grid-area: 2/1/6/4;
+      grid-template-columns: 49px 49px 49px;
+      grid-template-rows:30px 30px 30px;
+  }
+ button {
+     margin:1px;
+     border-radius: 5px;
+     cursor: pointer;
+     text-align: center;
+     text-decoration: none;
+     outline: none;
+     border: none;
+     box-shadow: 0 1.5px 1.5px 1px rgb(80, 80, 80);
+ }
+ button:hover {background-color: rgba(255, 255, 255, 0.424)}
+
+button:active {
+  background-color: #00000021;
+  box-shadow: 0 1.5px rgb(0, 0, 0);
+  transform: translateY(1px);
+}
+
+ p{
+     font-weight: bolder;
+     max-width: 1000px;
+     font-size: 9px;
+     padding: 5px;
+     font-family: Georgia, 'Times New Roman', Times, serif;
+ }
+ .held-label{
+     text-decoration: underline;
+ }
+ .operations > button{
+     background-color: goldenrod;
+ }
+ .digits > button{
+    background-color: crimson;
+    color: white;
+}
+.operations > .equals{
+    background-color: black;
+    color: white;
+}
+
